@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1659654542 source:c:\users\rishi\onedrive\desktop\fig\fractalimagegenerator\bitmap.cpp
+	<fstream>
+	"Bitmap.h"
+	"BitmapInfoHeader.h"
+	"BitmapFileHeader.h"
+
+1659654474 c:\users\rishi\onedrive\desktop\fig\fractalimagegenerator\bitmap.h
+	<string>
+	<cstdint>
+	<memory>
+
+1659660974 c:\users\rishi\onedrive\desktop\fig\fractalimagegenerator\bitmapinfoheader.h
+	<cstdint>
+
+1659654602 c:\users\rishi\onedrive\desktop\fig\fractalimagegenerator\bitmapfileheader.h
+	<cstdint>
+
+1659654842 source:c:\users\rishi\onedrive\desktop\fig\fractalimagegenerator\main.cpp
+	<iostream>
+	"Bitmap.h"
+
+1659654542 source:c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\bitmap.cpp
+	<fstream>
+	"Bitmap.h"
+	"BitmapInfoHeader.h"
+	"BitmapFileHeader.h"
+
+1659654474 c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\bitmap.h
+	<string>
+	<cstdint>
+	<memory>
+
+1659660974 c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\bitmapinfoheader.h
+	<cstdint>
+
+1659654602 c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\bitmapfileheader.h
+	<cstdint>
+
+1659654842 source:c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\main.cpp
+	<iostream>
+	"Bitmap.h"
+
