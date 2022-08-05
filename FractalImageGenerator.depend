@@ -26,7 +26,7 @@
 	"BitmapInfoHeader.h"
 	"BitmapFileHeader.h"
 
-1659654474 c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\bitmap.h
+1659662729 c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\bitmap.h
 	<string>
 	<cstdint>
 	<memory>
@@ -37,7 +37,7 @@
 1659654602 c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\bitmapfileheader.h
 	<cstdint>
 
-1659654842 source:c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\main.cpp
+1659662729 source:c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\main.cpp
 	<iostream>
 	"Bitmap.h"
 
