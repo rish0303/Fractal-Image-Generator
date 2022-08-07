@@ -37,9 +37,10 @@
 1659662729 c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\bitmapfileheader.h
 	<cstdint>
 
-1659837950 source:c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\main.cpp
+1659898546 source:c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\main.cpp
 	<iostream>
 	<cstdint>
+	<memory>
 	"Bitmap.h"
 	"Mandelbrot.h"
 
