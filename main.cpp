@@ -1,5 +1,7 @@
 #include <iostream>
+#include <cstdint>
 #include "Bitmap.h"
+#include "Mandelbrot.h"
 
 using namespace std;
 using namespace caveofprogramming;
@@ -8,17 +10,34 @@ int main()
 {
     int const WIDTH = 800;
     int const HEIGHT = 600;
+
     Bitmap bitmap(WIDTH, HEIGHT);
 
-    for(int i = 0; i < WIDTH; ++i)
+    double min = 999999;
+    double max = -999999;
+
+    for (int x = 0; x < WIDTH; ++x)
     {
-        for (int j = 0; j < HEIGHT; ++j)
+        for (int y = 0; y < HEIGHT; ++y)
         {
-            bitmap.setPixel (i, j, 255, 0, 0);
+            double xFractal = (x - WIDTH / 2) * 2.0 / WIDTH;
+            double yFractal = (y - HEIGHT / 2) * 2.0 / HEIGHT;
+
+            int iterations = Mandelbrot::getIterations(xFractal, yFractal);
+
+            uint8_t red = (uint8_t)(256 * (double)iterations / Mandelbrot::MAX_ITERATIONS);
+
+            bitmap.setPixel(x, y, red, red, red);
+
+            if (red < min)
+                min = red;
+            if (red > max)
+                max = red;
         }
     }
 
-    //bitmap.setPixel (WIDTH / 2, HEIGHT / 2, 255, 255, 255);
+    cout << min << ", " << max << endl;
+
     bitmap.write("test.bmp");
 
     cout << "Finished." << endl;
