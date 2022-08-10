@@ -20,7 +20,7 @@
 	<iostream>
 	"Bitmap.h"
 
-1659812430 source:c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\bitmap.cpp
+1659900918 source:c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\bitmap.cpp
 	<fstream>
 	"Bitmap.h"
 	"BitmapInfoHeader.h"
@@ -37,16 +37,17 @@
 1659662729 c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\bitmapfileheader.h
 	<cstdint>
 
-1659898546 source:c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\main.cpp
+1660071179 source:c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\main.cpp
 	<iostream>
 	<cstdint>
 	<memory>
+	<math.h>
 	"Bitmap.h"
 	"Mandelbrot.h"
 
-1659837546 source:c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\src\mandelbrot.cpp
+1659900918 source:c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\src\mandelbrot.cpp
 	"Mandelbrot.h"
 	<complex>
 
-1659836685 c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\include\mandelbrot.h
+1659900918 c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\include\mandelbrot.h
 
