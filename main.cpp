@@ -4,7 +4,7 @@
 #include <math.h>
 #include "Bitmap.h"
 #include "Mandelbrot.h"
-#include "Zoom.h"
+#include "ZoomList.h"
 
 using namespace std;
 using namespace caveofprogramming;
