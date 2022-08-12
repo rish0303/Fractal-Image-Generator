@@ -1,4 +1,7 @@
 #include "ZoomList.h"
+#include <iostream>
+
+using namespace std;
 
 namespace caveofprogramming
 {
@@ -7,10 +10,20 @@ namespace caveofprogramming
     void ZoomList::add(const Zoom& zoom)
     {
         _zooms.push_back(zoom);
+
+        _xCenter += (zoom.x - _width / 2) * _scale;
+        _yCenter += (zoom.y - _height / 2) * _scale;
+
+        _scale *= zoom.scale;
+
+        cout << _xCenter << ", " << _yCenter << ", " << _scale << endl;
     }
 
     pair<double, double> ZoomList::doZoom(int x, int y)
     {
-        return pair<double, double>(0.0, 0.0);
+        double xFractal = (x - _width / 2) * _scale + _xCenter;
+        double yFractal = (y - _height / 2) * _scale + _yCenter;
+
+        return pair<double, double>(xFractal, yFractal);
     }
 }

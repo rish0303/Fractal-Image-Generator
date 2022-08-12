@@ -12,6 +12,10 @@ namespace caveofprogramming
     class ZoomList
     {
         private:
+            double _xCenter = 0.0;
+            double _yCenter = 0.0;
+            double _scale = 1.0;
+
             int _width = 0;
             int _height = 0;
             vector<Zoom> _zooms;
