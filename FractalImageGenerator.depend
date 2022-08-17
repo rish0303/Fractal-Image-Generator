@@ -37,7 +37,7 @@
 1659662729 c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\bitmapfileheader.h
 	<cstdint>
 
-1660262580 source:c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\main.cpp
+1660763837 source:c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\main.cpp
 	<iostream>
 	<cstdint>
 	<memory>
@@ -45,6 +45,7 @@
 	"Bitmap.h"
 	"Mandelbrot.h"
 	"ZoomList.h"
+	"FractalCreator.h"
 
 1659900918 source:c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\src\mandelbrot.cpp
 	"Mandelbrot.h"
@@ -52,14 +53,17 @@
 
 1659900918 c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\include\mandelbrot.h
 
-1660071740 c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\include\zoom.h
+1660264230 c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\include\zoom.h
 
-1660263043 source:c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\src\zoomlist.cpp
+1660763357 source:c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\src\zoomlist.cpp
 	"ZoomList.h"
-	<iostream>
 
-1660262606 c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\include\zoomlist.h
+1660264231 c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\include\zoomlist.h
 	"Zoom.h"
 	<vector>
 	<utility>
+
+1660763914 c:\users\rishi\onedrive\desktop\fractal-image-generator\fractal-image-generator\include\fractalcreator.h
+	<string>
+	"Zoom.h"
 

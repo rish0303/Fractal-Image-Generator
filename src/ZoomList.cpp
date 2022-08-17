@@ -1,5 +1,4 @@
 #include "ZoomList.h"
-#include <iostream>
 
 using namespace std;
 
@@ -15,8 +14,6 @@ namespace caveofprogramming
         _yCenter += (zoom.y - _height / 2) * _scale;
 
         _scale *= zoom.scale;
-
-        cout << _xCenter << ", " << _yCenter << ", " << _scale << endl;
     }
 
     pair<double, double> ZoomList::doZoom(int x, int y)
