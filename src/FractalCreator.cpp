@@ -1,4 +1,5 @@
 #include "FractalCreator.h"
+#include <iostream>
 
 namespace caveofprogramming
 {
@@ -14,9 +15,57 @@ namespace caveofprogramming
     }
 
 
-    FractalCreator::~FractalCreator()
+    FractalCreator::~FractalCreator(){}
+
+
+    void FractalCreator::run(string name)
     {
-        //dtor
+        calculateIteration();
+        calculateTotalIterations();
+        calculateRangeTotals();
+        drawFractal();
+        writeBitmap("test.bmp");
+    }
+
+
+    void FractalCreator::addRange(double rangeEnd, const RGB& rgb)
+    {
+        _ranges.push_back(rangeEnd * Mandelbrot::MAX_ITERATIONS);
+        _colors.push_back(rgb);
+
+        if (_bGotFirstRange)
+            _rangeTotals.push_back(0);
+
+        _bGotFirstRange = true;
+    }
+
+
+    void FractalCreator::addZoom(const Zoom& zoom)
+    {
+        _zoomList.add(zoom);
+    }
+
+
+    void FractalCreator::calculateRangeTotals()
+    {
+        int rangeIndex = 0;
+
+        for (int i = 0; i < Mandelbrot::MAX_ITERATIONS; ++i)
+        {
+            int pixels = _histogram[i];
+
+            if (i >= _ranges[rangeIndex + 1])
+            {
+                ++rangeIndex;
+            }
+
+            _rangeTotals[rangeIndex] += pixels;
+        }
+
+        for (int value: _rangeTotals)
+        {
+            cout << "Range total: " << value << endl;
+        }
     }
 
 
@@ -49,11 +98,14 @@ namespace caveofprogramming
 
     void FractalCreator::drawFractal()
     {
+        RGB startColor(0, 0, 0);
+        RGB endColor(0, 0, 255);
+        RGB colorDiff  = endColor - startColor;
+
         for (int x = 0; x < _width; ++x)
         {
             for (int y = 0; y < _height; ++y)
             {
-
                 uint8_t red = 0;
                 uint8_t green = 0;
                 uint8_t blue = 0;
@@ -68,18 +120,14 @@ namespace caveofprogramming
                         hue += (double)_histogram[i]/_total;
                     }
 
-                    green = hue * 255;
+                    red = startColor.r + colorDiff.r * hue;
+                    green = startColor.g + colorDiff.g * hue;
+                    blue = startColor.b + colorDiff.b * hue;
                 }
 
                 _bitmap.setPixel(x, y, red, green, blue);
             }
         }
-    }
-
-
-    void FractalCreator::addZoom(const Zoom& zoom)
-    {
-        _zoomList.add(zoom);
     }
 
 

@@ -11,7 +11,7 @@ namespace caveofprogramming
         _zooms.push_back(zoom);
 
         _xCenter += (zoom.x - _width / 2) * _scale;
-        _yCenter += (zoom.y - _height / 2) * _scale;
+        _yCenter += -(zoom.y - _height / 2) * _scale;
 
         _scale *= zoom.scale;
     }
